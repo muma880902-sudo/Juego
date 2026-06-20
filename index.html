@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsicoLingo - Aprende Psicología</title>
+</head>
+<body>
+
+    <!-- Contenedor principal de la app (estilo móvil) -->
+    <div class="app-container">
+        
+        <!-- Cabecera: Estadísticas y barra de progreso -->
+        <header class="game-header">
+            <div class="top-bar">
+                <span class="hearts" id="hearts-display">❤️ 3</span>
+                <span class="xp" id="xp-display">⭐ 0 XP</span>
+            </div>
+            <div class="progress-bar-container">
+                <!-- La barra que irá llenándose -->
+                <div class="progress-bar-fill" id="progress-fill"></div>
+            </div>
+        </header>
+
+        <!-- Cuerpo de la pregunta -->
+        <main class="game-main">
+            <!-- Aquí irá el texto de la pregunta dinámicamente -->
+            <p class="question-prompt" id="question-text">
+                ¿Quién es considerado el padre del psicoanálisis?
+            </p>
+            
+            <!-- Cuadrícula de opciones de respuesta -->
+            <div class="options-grid" id="options-container">
+                <!-- El atributo data-id nos servirá en JS para saber qué botón se pulsó -->
+                <button class="option-btn" data-id="1">Carl Jung</button>
+                <button class="option-btn" data-id="2">Sigmund Freud</button>
+                <button class="option-btn" data-id="3">B.F. Skinner</button>
+                <button class="option-btn" data-id="4">William James</button>
+            </div>
+        </main>
+
+        <!-- Pie de página: Botón de acción principal -->
+        <footer class="game-footer">
+            <button id="check-btn">COMPROBAR</button>
+        </footer>
+
+        <!-- Banner de retroalimentación (Correcto/Incorrecto) -->
+        <div class="feedback-banner" id="feedback-banner">
+            <h2 class="feedback-title" id="feedback-title">¡Correcto!</h2>
+            <p class="feedback-text" id="feedback-text">Freud desarrolló la teoría del inconsciente.</p>
+            <button id="continue-btn">CONTINUAR</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
