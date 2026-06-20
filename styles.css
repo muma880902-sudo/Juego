@@ -1,7 +1,7 @@
 /* Importamos la fuente característica de Duolingo */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
 
-/* --- VARIABLES DE COLOR --- */
+/* --- VARIABLES DE COLOR --- */ 
 :root {
     --green: #58CC02;
     --green-dark: #46a302;
